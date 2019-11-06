@@ -22,6 +22,7 @@ time, mark, audio, video {
 
 body {
   margin: 0px;
+  padding-top: 56px;
   padding: 0px;
   background-color: #32435b;
   height: 100vh;

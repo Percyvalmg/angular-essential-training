@@ -1,7 +1,23 @@
-<section>
-  <header>
-    <h1>Media Watch List</h1>
-    <p class="description">Keeping track of the media I want to watch.</p>
-  </header>
-  <mw-media-item></mw-media-item>
-</section>
+<ec-navigation></ec-navigation>
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+
+      <ec-shop-list></ec-shop-list>
+
+    </div>
+
+    <div class="col-lg-9">
+
+        <ec-slider></ec-slider>
+        <div class="row">
+          <ec-product-item [productItem]="firstProductItem"></ec-product-item>
+          <ec-product-item [productItem]="secondProductItem"></ec-product-item>
+        </div>
+    </div>
+
+  </div>
+</div>
+<ec-footer></ec-footer>

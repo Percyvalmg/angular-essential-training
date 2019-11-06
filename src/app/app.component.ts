@@ -1,18 +1,23 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mw-app',
+  selector: 'ec-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  firstMediaItem = {
+  firstProductItem = {
     id: 1,
-    name: 'Firebug',
-    medium: 'Series',
-    category: 'Science Fiction',
-    year: 2010,
-    watchedOn: 1294166565384,
-    isFavorite: false
+    name: 'Black Harvest Africa T-Shirt',
+    imageUrl: 'assets/BlackHarvestAfricaTShirt.png',
+    description: 'This is a really cool T-shirt',
+    price: 120,
+  };
+  secondProductItem = {
+    id: 2,
+    name: 'Black Harvest Africa Hoodie',
+    imageUrl: 'assets/BlackHarvestAfricaHoodie.png',
+    description: 'This is a really cool hoodie',
+    price: 120
   };
 }
