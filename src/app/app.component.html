@@ -1,23 +1,17 @@
 <ec-navigation></ec-navigation>
-<div class="container">
+<div class="container-fluid">
 
   <div class="row">
 
     <div class="col-lg-3">
-
       <ec-shop-list></ec-shop-list>
-
     </div>
-
     <div class="col-lg-9">
-
-        <ec-slider></ec-slider>
-        <div class="row">
-          <ec-product-item [productItem]="firstProductItem"></ec-product-item>
-          <ec-product-item [productItem]="secondProductItem"></ec-product-item>
-        </div>
+      <ec-slider></ec-slider>
+      <div class="container">
+        <ec-product-item-list></ec-product-item-list>
+      </div>
     </div>
-
   </div>
 </div>
 <ec-footer></ec-footer>

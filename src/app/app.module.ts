@@ -6,6 +6,8 @@ import { NavigationComponent } from './navigation.component';
 import { SliderComponent } from './slider.component';
 import { FooterComponent  } from './footer.component';
 import { ShopListComponent  } from './shop-list.component';
+import {ProductItemListComponent} from './product-item-list.component';
+import { FavouriteDirective } from './favourite.directive';
 
 @NgModule({
   imports: [
@@ -17,7 +19,9 @@ import { ShopListComponent  } from './shop-list.component';
     NavigationComponent,
     SliderComponent,
     FooterComponent,
-    ShopListComponent
+    ShopListComponent,
+    ProductItemListComponent,
+    FavouriteDirective
   ],
   bootstrap: [
     AppComponent

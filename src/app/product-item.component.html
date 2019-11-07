@@ -1,16 +1,14 @@
-<div class="col-lg-4 col-md-6 mb-4">
-  <div class="card h-100">
-    <a href="#"><img class="card-img-top" src={{productItem.imageUrl}} alt=""></a>
-    <div class="card-body">
-      <h4 class="card-title">
-        <a href={{productItem.imageUrl}}>{{productItem.name}}</a>
-      </h4>
-      <h5>R{{productItem.price}}</h5>
-      <p class="card-text">{{productItem.description}}</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-      <button class="btn btn-primary" (click)="onAddToCart()">Add to Cart</button>
-    </div>
+<div class="card col-lg-4 col-md-6 mt-4 mb-4 mr-4 ml-4 pr-0 pl-0">
+  <a href={{productItem.imageUrl}}><img class="card-img-top" src={{productItem.imageUrl}} alt=""></a>
+  <div class="card-body">
+    <h4 class="card-title">
+      <a href={{productItem.imageUrl}}>{{productItem.name}}</a>
+    </h4>
+    <h5>R{{productItem.price}}</h5>
+    <p class="card-text">{{productItem.description}}</p>
+  </div>
+  <div class="card-footer text-center">
+    <small [ecFavourite]="productItem.isFavourite" class="text-muted float-left">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+    <button class="btn btn-primary float-right" (click)="onAddToCart()">Add to Cart</button>
   </div>
 </div>

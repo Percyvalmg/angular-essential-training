@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'ec-product-item',
@@ -7,8 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductItemComponent {
   @Input() productItem;
+  @Output() addToCart = new EventEmitter();
 
-  onDelete() {
-    console.log('deleted');
+  onAddToCart() {
+    console.log('added to cart');
+    this.addToCart.emit(this.productItem);
   }
 }
