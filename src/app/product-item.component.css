@@ -1,3 +1,5 @@
-.is-favourite{
-    color: red;
-}
+.productItem{
+    display: inline-block;
+    width: 20rem;
+    height: 29rem;
+  }

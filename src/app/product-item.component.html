@@ -1,4 +1,4 @@
-<div class="card col-lg-4 col-md-6 mt-4 mb-4 mr-4 ml-4 pr-0 pl-0">
+<div class="card productItem col-lg-4 col-md-6 mt-4 mb-4 mr-4 ml-4">
   <a href={{productItem.imageUrl}}><img class="card-img-top" src={{productItem.imageUrl}} alt=""></a>
   <div class="card-body">
     <h4 class="card-title">
@@ -8,7 +8,7 @@
     <p class="card-text">{{productItem.description}}</p>
   </div>
   <div class="card-footer text-center">
-    <small [ecFavourite]="productItem.isFavourite" class="text-muted float-left">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+    <i [ecFavourite]="productItem.isFavourite" class="far fa-heart"></i>
     <button class="btn btn-primary float-right" (click)="onAddToCart()">Add to Cart</button>
   </div>
 </div>
